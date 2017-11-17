@@ -12,11 +12,11 @@
 
   <div class="col-md-9 programmer-info">
 
-    <%= render partial "attribute", :locals => {attribute: @programmer.home_country, attribute_name: 'Home Country'} %>
+    <%= render partial: "attribute", :locals => {attribute: @programmer.home_country, attribute_name: 'Home Country'} %>
 
-    <%= render partial "attribute", :locals => {attribute: @programmer.quote, attribute_name: 'Quote'} %>
+    <%= render partial: "attribute", :locals => {attribute: @programmer.quote, attribute_name: 'Quote'} %>
 
-    <%= render partial "attribute", :locals => {attribute: @programmer.claim_to_fame, attribute_name: 'Claim To Fame'} %>
+    <%= render partial: "attribute", :locals => {attribute: @programmer.claim_to_fame, attribute_name: 'Claim To Fame'} %>
 
     <p>
     <%= link_to "Learn more about #{@programmer.name}", @programmer.wikipedia_page, target: '_blank' %>
