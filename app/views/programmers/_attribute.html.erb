@@ -4,7 +4,7 @@
   <strong>Home Country:</strong> <%= @programmer.home_country %><br>
   </p>
 
-<%= render @programmer, :locals => {:size => 30} %>
+<%= render partial "attribute", :locals => {@programmer.home_country => 30} %>
 
   <p>
   <strong>Quote:</strong> <%= @programmer.quote %><br>
